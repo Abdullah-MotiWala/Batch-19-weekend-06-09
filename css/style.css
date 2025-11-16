@@ -9,32 +9,33 @@ p {
 } */
 a {
   background-color: blue; /* name */
-  background-color: rgb(33, 255, 255); /* rgb*/
-  background-color: rgba(33, 255, 255,0.5);
-  background-color: hsl(45, 87%, 43%); /* hsl*/
-  background-color: hsla(45, 87%, 43%,0.5);
-  background-color: #d10505; /* hexacode */
-opacity: 0;
-  color: white;
+  background-color: rgb(25, 16, 108); /* rgb*/
+  background-color: hsl(200, 87%, 43%); /* hsl*/
+  background-color: rgba(33, 255, 255,1);
+  background-color: hsla(45, 87%, 43%,0.9);
+  background-color: #000; /* hexacode */
+  opacity: 0.5;
+  /* color: white; */
 }
-/* a {
-  background-color: yellow;
-  color: white;
-} */
 
 h2#heading-1 {
   background-color: yellow;
+  color: white;
 }
-
-/* a.ref-group {
-    background-color: pink;
-} */
 
 ul p {
   font-weight: bold;
   color: red;
 }
 
-ul>li {
+ul p {
+  font-weight: bold;
+  color: blue;
+}
+
+.ref-group li {
     list-style: circle;
 }
+
+
+
