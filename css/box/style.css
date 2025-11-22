@@ -1,0 +1,43 @@
+.box-1 {
+  background-color: green;
+  height: 50vh;
+  /* width: 50vw; */
+  /* width: 600px; */
+
+  min-width: 400px;
+  max-width: 600px;
+  /* overflow:auto; */
+  overflow-y: auto;
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: yellow; */
+  border-top: yellow 2px solid;
+  border-bottom: yellow solid 2px;
+  border-right: yellow 2px solid;
+  border-left: yellow 2px solid;
+}
+div:hover {
+  border-top-color: blue;
+}
+
+/* .digit-1 {
+    height: 500px;
+    width: 500px;
+    border-right: 4px solid blue;
+} */
+
+.digit-2-1,
+.digit-2-2 {
+  height: 250px;
+  width: 250px;
+}
+
+.digit-2-1 {
+  border: 2px solid blue;
+  border-left: none;
+}
+
+.digit-2-2 {
+  border-left: 2px solid blue;
+  border-bottom: 2px solid blue;
+}

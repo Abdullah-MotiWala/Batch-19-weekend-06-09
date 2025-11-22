@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap");
 
 /* @font-face {
     font-family: 'babarAzam';
-    src: url(../text/index.html)
+    src: url(../text/index.tof)
 } */
 
 p {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-style: italic;
+  /* text-align: ; */
+  font-family:
+   /* "Playwrite NZ Guides", */
+   Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  /* font-style: italic; */
   /* text-transform: uppercase; */
   text-transform: lowercase;
   /* text-transform: capitalize; */
@@ -16,11 +21,11 @@ p {
   line-height: 32px;
   word-spacing: 16px;
   letter-spacing: 8px;
-  text-align: justify;
+  text-align: right;
   text-indent: 8em;
-  text-shadow: 2px 2px 12px green;
-  /* font-size: 16px; */
-  /* font-size: 50%; */
+  text-shadow: 10px 10px 10px green;
+  /* font-size: 32px; */
+  /* font-size: 200%; */
   /* font-size: 2em; */
 }
 
@@ -37,17 +42,21 @@ p:first-line {
 a:visited {
   color: red;
 }
+a:link{
+  
+}
 
 a {
   color: pink;
+  text-decoration: none ;
 }
 
-.text:hover {
+/* .text:hover {
   color: orange;
   cursor: zoom-out;
   font-weight: bold;
   font-size: 28px;
-}
+} */
 
 button {
   background-color: blanchedalmond;
@@ -58,12 +67,11 @@ button:active {
 }
 
 button:hover {
-    background-color: red;
+  background-color: red;
 }
 
-
 input:focus {
-    background-color: green;
+  background-color: green;
 }
 
 /* button[disable]{
@@ -75,7 +83,7 @@ input:focus {
 } */
 
 .box {
-    background-color: green;
-    height: 25vh;
-    width: 25vw;
+  background-color: green;
+  height: 25vh;
+  width: 25vw;
 }
