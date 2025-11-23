@@ -4,17 +4,19 @@
   /* width: 50vw; */
   /* width: 600px; */
 
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 100px;
+  max-width: 1200px;
   /* overflow:auto; */
   overflow-y: auto;
-  /* border-width: 2px;
-    border-style: solid;
-    border-color: yellow; */
-  border-top: yellow 2px solid;
+  border-width: 4px;
+  border-style: dotted;
+  border-color: yellow;
+  /* border: 4px yellow dotted ; */
+  /* border-top: yellow 2px solid;
   border-bottom: yellow solid 2px;
   border-right: yellow 2px solid;
-  border-left: yellow 2px solid;
+  border-left: yellow 2px solid; */
+  border-top-color: pink;
 }
 div:hover {
   border-top-color: blue;
@@ -41,3 +43,66 @@ div:hover {
   border-left: 2px solid blue;
   border-bottom: 2px solid blue;
 }
+
+div.new {
+  /* width: 900px; */
+  /* padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em; */
+  /* padding: 1em 1em 1em 1em; */
+  /* padding: 1em 2em; */
+  padding: 100px;
+  padding-left: 0;
+  border: 1px solid;
+  /* line-height: 1; */
+}
+
+div.new-2 {
+  margin: 2em;
+}
+
+ul > li {
+  display: inline-block;
+  background-color: gray;
+  height: 30px;
+  width: 70px;
+  color: black;
+  margin: 2px;
+}
+
+ul {
+  /* visibility: hidden;
+  display: none; */
+  /* font-size: 2px;
+  font-family: Roboto; */
+  box-shadow: 2px 12px 12px 14px black, 12px 16px 12px 14px blue;
+  border-radius: 2em;
+
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+div.circle {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.capsule {
+  height: 40px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 22px;
+  margin: 12px;
+}
+
+/* div.triangle { */
+  /* width: 0;
+  height: 0; */
+  /* border: 50px solid black; */
+  /* border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black; */
+/* } */
