@@ -1,0 +1,28 @@
+ul {
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-image: url(); */
+    /* list-style-position: inside; */
+    list-style: lower-roman inside;
+}
+
+li {
+    background-color: blue;
+    margin-bottom: 2px;
+}
+
+table {
+    border: 2px solid black;
+    /* border-collapse: collapse;  */
+    border-spacing: 8px;
+    empty-cells: hide;
+    background-image: url(https://i.aaj.tv/primary/2023/05/03125200e8011d7.webp);
+    cursor:url("./location-pin.pngs"),progress;
+}
+
+td {
+    border: 1px solid blue;
+}
+
+tr {
+    border: 2px solid red;
+}

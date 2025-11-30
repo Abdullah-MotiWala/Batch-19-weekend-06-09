@@ -1,0 +1,79 @@
+.bg {
+  height: 500px;
+  width: 500px;
+  /* background-color: yellow;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7Ybb3v3TuDqvOj8fDeHVlsv6isB2LkrdIw&s);
+  background-repeat: repeat-y;
+  background-position: right top; */
+  /* background: blue repeat-y url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7Ybb3v3TuDqvOj8fDeHVlsv6isB2LkrdIw&s) right top; */
+    background: blue repeat-y radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(180, 5, 31, 1) 63%, rgba(0, 212, 255, 1) 100%) right top;
+}
+
+div {
+  height: 250px;
+  width: 250px;
+  background-color: green;
+  margin: 2px;
+}
+.parent-sticky {
+  position: sticky;
+  top: 10px;
+  background-color: red;
+}
+.child {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+#box-1 {
+  background-color: green;
+  position: fixed;
+  z-index: 100000;
+  left: calc(50vw - 125px);
+  top: calc(50vh - 125px);
+  /* position: absolute; */
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  /* position: relative;
+  left: 2em;
+  top: 2em; */
+}
+
+#box-2 {
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* position: relative;
+  bottom: 250px;
+  left: 250px; */
+}
+
+#box-3 {
+  background-color: purple;
+  /* position: relative;
+  bottom: 2em;
+  right: 2em; */
+}
+
+#box-4 {
+  background-color: gray;
+}
+
+#box-5 {
+  background-color: red;
+}
+
+#box-2-parent {
+  height: 750px;
+  width: 750px;
+  border: 1px solid black;
+  position: relative;
+}
+
+p {
+  z-index: 100001;
+  position: relative;
+}

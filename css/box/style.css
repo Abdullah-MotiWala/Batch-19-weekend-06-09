@@ -88,6 +88,11 @@ div.circle {
   width: 500px;
   background-color: blue;
   border-radius: 50%;
+  /* border-top-width: 8px;
+  border-top-style: solid;
+  border-top-color: red; */
+  /* border-top: solid 8px black; */
+  border: 10px solid green;
 }
 
 .capsule {
@@ -106,3 +111,14 @@ div.circle {
   border-right: 50px solid transparent;
   border-bottom: 100px solid black; */
 /* } */
+
+a {
+  /* background-color: green; */
+  /* height: 250px;
+  width: 250px; */
+  /* display: none;
+  visibility: hidden; */
+  /* display: inline-block; */
+  box-shadow: 2px 2px 4px 4px blueviolet;
+  border-radius: 4px;
+}
