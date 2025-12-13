@@ -20,6 +20,10 @@ div {
   top: 10px;
   background-color: red;
 }
+.sticky {
+  position: sticky;
+  top: 20px;
+}
 .child {
   height: 25px;
   width: 25px;

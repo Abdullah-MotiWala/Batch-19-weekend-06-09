@@ -1,0 +1,152 @@
+.box {
+  height: 250px;
+  width: 250px;
+  background-color: gray;
+  position: absolute;
+  /* left: 20px; */
+  left: 0;
+  top: 0;
+  /* animation-name: position_movement;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s; */
+  /* animation-delay: 6s; */
+  /* animation-direction: alternate-reverse;
+  animation-iteration-count:infinite; */
+  /* animation-range: 10% 50%; */
+}
+.box:active {
+  animation: position_movement both ease-in-out 6s;
+}
+@keyframes position_movement {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 250px);
+  }
+}
+
+@keyframes petroling_movement {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 250px);
+    top: 0;
+  }
+  50% {
+    left: calc(100% - 250px);
+    top: calc(100% - 250px);
+  }
+  75% {
+    top: calc(100% - 250px);
+    left: 0;
+  }
+}
+
+/* .pulse {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: red;
+  margin: 8em;
+  animation: pulse 1s infinite alternate;
+} */
+
+/* @keyframes pulse { */
+/* from { */
+/* height: 75px;
+    width: 75px; */
+/* transform: scale(2); */
+/* }
+  to {
+    transform: scale(0.5); */
+/* height: 125px;
+    width: 125px; */
+/* }
+} */
+
+.road {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.road img.car {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 35%;
+  width: 100em;
+  animation: moving_forward 2s linear forwards;
+}
+
+/* .road img.car-2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 35%;
+  width: 100em;
+  animation: moving_forward 3s linear forwards;
+  animation-delay: 5s;
+}
+
+.road img.road {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes moving_forward {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 40em;
+    transform: scale(0.1);
+  }
+} */
+
+div.zig-zag {
+  height: 150px;
+  width: 150px;
+  background-color: green;
+  border-radius: 100%;
+  animation: zigzag 500ms alternate infinite linear;
+  position: absolute;
+}
+
+@keyframes zigzag {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  16% {
+    top: calc(100% - 150px);
+    left: 16vw;
+  }
+  32% {
+    top: 0;
+    left: 32vw;
+  }
+  48% {
+    top: calc(100% - 150px);
+    left: 48vw;
+  }
+  64% {
+    top: 0;
+    left: 64vw;
+  }
+  80% {
+    top: calc(100% - 150px);
+    left: 80vw;
+  }
+  100% {
+    top: 0;
+    left: calc(100vw - 150px);
+  }
+}
