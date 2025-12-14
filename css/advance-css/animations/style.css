@@ -114,9 +114,11 @@
 div.zig-zag {
   height: 150px;
   width: 150px;
+  top: 4em;
   background-color: green;
   border-radius: 100%;
-  animation: zigzag 500ms alternate infinite linear;
+  animation: zigzag 5s both linear 2;
+  animation-delay: 2s;
   position: absolute;
 }
 
@@ -149,4 +151,12 @@ div.zig-zag {
     top: 0;
     left: calc(100vw - 150px);
   }
+}
+
+.box {
+  transition: transform 5s;
+}
+.box:hover {
+  /* transform: rotate(360deg); */
+  transform:scaleX(20);
 }
