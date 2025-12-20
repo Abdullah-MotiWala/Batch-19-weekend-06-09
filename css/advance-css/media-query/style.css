@@ -4,6 +4,13 @@
 p {
     display: none;
 }
+a {
+  background-color: blue;
+  color: wheat;
+  height: 120px;
+  width: 120px;
+  display: inline-block ;
+}
 
 @media print {
   input {
@@ -13,7 +20,6 @@ p {
   p {
     display: block;
   }
-  
 } */
 div {
   height: 250px;

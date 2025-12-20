@@ -1,0 +1,38 @@
+div > div.box {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  /* margin: 2px; */
+  border: 1px solid brown;
+  font-size: 42px;
+}
+
+.box-2 {
+    /* align-self:flex-start ; */
+    /* order: -1; */
+    flex-grow:1;
+    flex-shrink: 3;
+
+}
+.box-4 {
+    /* order: 1; */
+    /* flex-grow:7; */
+    flex-grow: 2;
+}
+div.parent {
+  height: 512px;
+  align-items: center;
+  /* flex-direction: column; */
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: flex; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: flex-start; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+  background-color: gray;
+  /* gap: 4px; */
+  row-gap: 8px;
+  column-gap: 4px;
+}
