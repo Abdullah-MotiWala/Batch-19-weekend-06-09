@@ -1,0 +1,55 @@
+div > div.box {
+  /* width: 250px; */
+  /* height: 250px; */
+  background-color: green;
+  border: 1px solid brown;
+  font-size: 42px;
+}
+
+div.parent {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr 1fr 1fr; */
+  /* grid-template-columns: minmax(120px,2fr) 2fr; */
+  /* grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; */
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  column-gap: 4px;
+  height: 100vw;
+  background-color: pink;
+}
+
+.header {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.content {
+    background-color: green;
+    grid-column-end: 2;
+}
+
+.section {
+    grid-column-start: 2;
+    background-color: aqua;
+}
+
+.footer {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+div.header {
+    background-color: pink;
+    padding: 6px;
+    color: white;
+}
+
+div.header div.child {
+    padding: inherit;
+    background-color: yellow;
+}

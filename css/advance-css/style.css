@@ -1,11 +1,13 @@
 :root {
     --primary-color : rgb(245, 192, 0);
+    --primary: blue;
 }
 
 div {
-    /* --primary-color:pink; */
+    --primary-color:pink;
     background-color: var(--primary-color);
-    color: green;
+    color: var(--primary);
+
 }
 
 span {

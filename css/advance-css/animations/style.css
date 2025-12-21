@@ -3,27 +3,43 @@
   width: 250px;
   background-color: gray;
   position: absolute;
-  /* left: 20px; */
-  left: 0;
+  left: 20px;
+  /* left: 0; */
   top: 0;
-  /* animation-name: position_movement;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  animation-duration: 6s; */
-  /* animation-delay: 6s; */
-  /* animation-direction: alternate-reverse;
-  animation-iteration-count:infinite; */
-  /* animation-range: 10% 50%; */
+  animation-name: position_movement;
+  /* animation-fill-mode: backwards; */
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+  /* animation-delay: 4s; */
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-range: 10% 50%;
 }
 .box:active {
   animation: position_movement both ease-in-out 6s;
 }
 @keyframes position_movement {
-  from {
+  /* from {
     left: 0;
   }
   to {
     left: calc(100% - 250px);
+  } */
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 250px);
+    top: 0;
+  }
+  50% {
+    left: calc(100% - 250px);
+    top: calc(100% - 250px);
+  }
+  75% {
+    top: calc(100% - 250px);
+    left: 0;
   }
 }
 
@@ -158,5 +174,5 @@ div.zig-zag {
 }
 .box:hover {
   /* transform: rotate(360deg); */
-  transform:scaleX(20);
+  transform: scaleX(20);
 }
