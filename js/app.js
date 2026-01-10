@@ -1,7 +1,7 @@
 // Premitive Datatypes
 // Dynamic Typed Language
-var varString = "Abdullah";
-var varNumber = 600;
+var varString = "How are you?";
+var varNumber = 1000;
 var varBoolean = true;
 var varNull = null;
 var varUndefined = undefined;
@@ -27,17 +27,18 @@ var varObject = { a: "abc" };
 
 // var firstName;
 // firstName = "Abdullah"
-// firstName = "Motiwala"
-
-// var firstName = "'Abdullah'"
-// console.log(firstName)
-
+("Abdullah");
+// var firstName = '"Abdullah"'
 // firstName = "Motiwala"
 // console.log(firstName)
 
-// var age = 25;
-// age = age + 1
-// console.log(age)
+// firstName = "Motiwala"
+// console.log(firstName)
+
+var age = 25;
+// age + 1;
+age = age + 1;
+console.log(age);
 
 // var newAge = 27
 // // newAge + 9
@@ -70,7 +71,14 @@ var varObject = { a: "abc" };
 
 // alert(1916)
 
-var ourNum = 25;
+// var a = 2;
+// // a = a +1
+// // a -= 1
+// // a++
+// console.log(++a)
+// console.log(a)
+
+// var value = 25;
 // value++
 // console.log(++value)
 // // value = value + 1
@@ -84,5 +92,49 @@ var ourNum = 25;
 // console.log(value)
 // var a = value++ + value++ + value++ + ++value
 // var a = ourNum++ + value++ + value++
-// a = 78 + 29 = 107
-// ourNum = 29
+// 25 + 26+ 27 + 29
+
+// console.log(a)
+
+// var a = 1;
+// console.log(++a)
+// console.log(a)
+
+var a = "Abdullah";
+var b = "Motiwala";
+var c = a + " " + b; //concatenation
+console.log(c);
+
+// var a = "Abdullah";
+// var b = "Motiwala";
+// var c = a -  " "  - b; //concatenation
+// console.log(c)
+
+// var a = "a";
+// var b = "2"; //Number like string
+// var c = a / b;
+// console.log(c);
+
+// var a = "2";
+// var b = "2";
+// var c = b + a;
+// console.log(c)
+
+// var a =  5+ "5"-5;
+// console.log(a);
+
+// var userAge = prompt("Enter your age");
+// var userUpdateAge = Number(userAge) + 5;
+// console.log(userUpdateAge, userAge);
+// var a = "25.5";
+// var b = Number(a);
+// var b = parseInt(a);
+// var b = parseFloat(a);
+// console.log(a, b);
+
+var birthYear = prompt("Enter your birth year!!!")
+var currentYear = 2026
+var userAge = currentYear - birthYear
+
+var message = "Your age is " + userAge
+alert(message)
