@@ -115,10 +115,10 @@ console.log(c);
 // var c = a / b;
 // console.log(c);
 
-// var a = "2";
-// var b = "2";
-// var c = b + a;
-// console.log(c)
+var a = "2";
+var b = "2";
+var c = b - a;
+console.log(c);
 
 // var a =  5+ "5"-5;
 // console.log(a);
@@ -130,11 +130,179 @@ console.log(c);
 // var b = Number(a);
 // var b = parseInt(a);
 // var b = parseFloat(a);
-// console.log(a, b);
+// // console.log(a, b);
 
-var birthYear = prompt("Enter your birth year!!!")
-var currentYear = 2026
-var userAge = currentYear - birthYear
+// var birthYear = prompt("Enter your birth year!!!")
+// var currentYear = 2026
+// var userAge = currentYear - birthYear
 
-var message = "Your age is " + userAge
-alert(message)
+// var message = "Your age is " + userAge
+// alert(message)
+
+// var rotiWala = false;
+// var parathaWala = false;
+
+// if (rotiWala) {
+//   console.log("Roti le ana");
+// } else if (parathaWala) {
+//   console.log("Paratha le ana");
+// } else {
+//   console.log("Kuch nahi lena");
+// }
+
+// var charges = prompt("Enter the charges");
+// var lowPayingClient = charges === 250;
+// console.log(lowPayingClient)
+
+// var newCharges = lowPayingClient + 50;
+
+var a = "40";
+var b = 50;
+
+// var comparision = a == b
+// var comparision = a < b
+// var comparision = a > b
+// console.log(comparision)
+
+// var studentMarks = 79
+// var isStudentAPlus = studentMarks >= 80
+// var isStudentFailed = studentMarks <= 39
+
+// var lowPayingClient = 250;
+// var midPayingClient = 750;
+// var highPayingClient = 1250;
+
+// var charges = +prompt("Enter the charges");
+
+// var isLowPayingClient = charges <= lowPayingClient;
+// var isMidPayingClient = charges <= midPayingClient;
+
+// var tip = 0;
+// if (isLowPayingClient) {
+//   tip = (charges / 100) * 10;
+// } else if (isMidPayingClient) {
+//   tip = (charges / 100) * 15;
+// } else {
+//   tip = 500;
+// }
+// alert("Tip is " + tip);
+
+var userEmail = "abdullah@gmail.com";
+var userPwd = "Password@123";
+
+var email = prompt("Enter your email");
+var pwd = prompt("Enter your password");
+
+var isEmailCorrect = email === userEmail;
+var isPasswordCorrect = pwd === userPwd;
+if (isEmailCorrect) {
+  if (pwd === userPwd) {
+  }
+  console.log("");
+}
+
+// if (email == userEmail) {
+//   if (pwd == userPwd) {
+//     alert("Login Successfully");
+//   } else {
+//     alert("Credential not found");
+//   }
+// } else {
+//   alert("Credential not found");
+// }
+
+// LOGICAL OPERATORS: && ||
+// if (email === userEmail && pwd === userPwd) {
+//   alert("User Verified");
+// } else {
+//   alert("Invalid Creds");
+// }
+
+// var isAlive = true
+// var isAble = false
+// var isRich = false
+// var isBeautiful = false
+
+// if(isAlive || isAble || isRich || isBeautiful) {
+//     console.log("do Marri")
+// }
+
+// var isRich = true
+// var isHandsome = true
+// var isCaring = true
+// var isBusinessMan = true
+
+// if(isRich && isHandsome && isCaring && isBusinessMan) {
+//     console.log("====")
+// }
+
+// var firstname = prompt("Enter The Name");
+// var lastName = prompt("Enter last Name");
+
+// if (firstname == "abdullah") {
+//   if (lastName == "ali") {
+//     alert("Welcome");
+//   }
+// } else {
+//   alert("incorrect credentials");
+// }
+
+// if (false) alert("Alert");
+// else alert("Not Alert");
+
+// var a = 2501;
+// var b = 2501;
+
+// var condition = a < b;
+// console.log(a === b);
+
+// if (a === b) {
+//   console.log("===run");
+// }
+
+var age = 17;
+var gender = "female";
+
+// if (age >= 45) {
+//   console.log("Over Age | License Rejected");
+// } else if (age < 18) {
+//   console.log("Under Age | License Rejected");
+// } else if (age >= 18) {
+//   console.log("License Approved");
+// }
+
+if (age >= 45) {
+  console.log("Over Age | License Rejected");
+} else if (age < 18) {
+  console.log("Under Age | License Rejected");
+} else if (age >= 18 && gender !== "female") {
+  console.log("License Approved");
+}
+
+var isInsAva = true;
+var isAssAva = false;
+
+if (isAssAva || isInsAva === true) {
+  console.log("Initiate the class");
+}
+
+var student1 = "Ahmed";
+var student2 = "Bilal";
+
+// var students = [true, 12, "abc", null, undefined, student1, []]
+// var students = ["Ahmed", "Bilal"];
+// console.log(students[0], students);
+
+// var students = ["Ali"];
+// var students;
+// console.log(students)
+// students = ["Ali"]
+// var students = ["Abdullah"];
+
+// var students = ["Ahmed"];
+// students = ["Bilal"];
+
+// const ourPlanet = "Earth";
+let myAge = 24;
+myAge = 25;
+console.log(myAge)
