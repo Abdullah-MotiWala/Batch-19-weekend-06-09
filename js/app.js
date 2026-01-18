@@ -190,16 +190,16 @@ var b = 50;
 var userEmail = "abdullah@gmail.com";
 var userPwd = "Password@123";
 
-var email = prompt("Enter your email");
-var pwd = prompt("Enter your password");
+// var email = prompt("Enter your email");
+// var pwd = prompt("Enter your password");
 
-var isEmailCorrect = email === userEmail;
-var isPasswordCorrect = pwd === userPwd;
-if (isEmailCorrect) {
-  if (pwd === userPwd) {
-  }
-  console.log("");
-}
+// var isEmailCorrect = email === userEmail;
+// var isPasswordCorrect = pwd === userPwd;
+// if (isEmailCorrect) {
+//   if (pwd === userPwd) {
+//   }
+//   console.log("");
+// }
 
 // if (email == userEmail) {
 //   if (pwd == userPwd) {
@@ -303,6 +303,42 @@ var student2 = "Bilal";
 // students = ["Bilal"];
 
 // const ourPlanet = "Earth";
-let myAge = 24;
-myAge = 25;
-console.log(myAge)
+// let myAge = 24;
+// myAge = 25;
+// console.log(myAge);
+
+// const students = ["Ali", "Affan", "Chotu", "Sameer"];
+// const removedStudentName = students.shift();
+// alert("Removed Student: " + removedStudentName);
+
+// const totalStudents = students.unshift("Rehan", "Bashir");
+// alert("Total Class Strength is: " + totalStudents);
+// const indexNumber = 1
+// console.log(students);
+
+// const pushReturn = students.push("Roshan", "ABSENT");
+// const popReturn = students.pop();
+// students.pop();
+
+// students.shift()
+// students.unshift("Rehan","Allahwala");
+// console.log("🚀 ~ students:", students);
+
+let students2 = [
+  "Rehan",
+  "Bashir",
+  "Ali",
+  "Affan",
+  "Chotu",
+  "Sameer",
+  "Roshan",
+  "ABSENT",
+];
+// const deletedItems = students2.splice(2, 1, "Khan");
+// console.log(deletedItems);
+
+// const a1 = [];
+// console.log(a1.pop());
+
+students2 = students2.slice(1, 4);
+console.log(students2);
