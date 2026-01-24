@@ -287,10 +287,11 @@ if (isAssAva || isInsAva === true) {
 }
 
 var student1 = "Ahmed";
+0;
 var student2 = "Bilal";
 
 // var students = [true, 12, "abc", null, undefined, student1, []]
-// var students = ["Ahmed", "Bilal"];
+// var students = ["Ahme1d", "Bilal"];
 // console.log(students[0], students);
 
 // var students = ["Ali"];
@@ -307,7 +308,7 @@ var student2 = "Bilal";
 // myAge = 25;
 // console.log(myAge);
 
-// const students = ["Ali", "Affan", "Chotu", "Sameer"];
+const students = ["Ali", "Affan", "Chotu", "Sameer"];
 // const removedStudentName = students.shift();
 // alert("Removed Student: " + removedStudentName);
 
@@ -316,7 +317,7 @@ var student2 = "Bilal";
 // const indexNumber = 1
 // console.log(students);
 
-// const pushReturn = students.push("Roshan", "ABSENT");
+const pushReturn = students.push("Roshan", "ABSENT");
 // const popReturn = students.pop();
 // students.pop();
 
@@ -324,7 +325,7 @@ var student2 = "Bilal";
 // students.unshift("Rehan","Allahwala");
 // console.log("🚀 ~ students:", students);
 
-let students2 = [
+const students10 = [
   "Rehan",
   "Bashir",
   "Ali",
@@ -340,5 +341,20 @@ let students2 = [
 // const a1 = [];
 // console.log(a1.pop());
 
-students2 = students2.slice(1, 4);
-console.log(students2);
+// students2 = students2.slice(1, 4);
+// console.log(students2);
+
+// const copyArray = students10.toSpliced(0, 2, "owais");
+// console.log(copyArray, "copyarray");
+// console.log(students10, "students10");
+
+// let abc = 1;
+// let bca = abc;
+
+// console.log(abc, bca);
+
+const myArray2 = ["a", "b", "c"];
+// const myArray3 = myArray2.toString();
+const myArray3 = JSON.parse(JSON.stringify(myArray2));
+myArray3.push("d");
+console.log(myArray2, myArray3);
