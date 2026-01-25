@@ -353,8 +353,62 @@ const students10 = [
 
 // console.log(abc, bca);
 
-const myArray2 = ["a", "b", "c"];
+// const myArray2 = '["a", "b", "c"]';
+// const myArray3 = JSON.parse(JSON.stringify(myArray2));
+// myArray3.push("d")
 // const myArray3 = myArray2.toString();
-const myArray3 = JSON.parse(JSON.stringify(myArray2));
-myArray3.push("d");
-console.log(myArray2, myArray3);
+// const myArray3 = JSON.parse(JSON.stringify(myArray2));
+// myArray3.push("d");
+// console.log(myArray2, myArray3);
+// console.log(deepCopy === myArray4);
+console.clear();
+// for (let i = 0; i > 10; i++) {
+//   console.log("Saalaam", i);
+// }
+
+// const tableValue = 2
+// for (let i = 1; i <= 10; i++) {
+//   // console.log("10 X 1 = 10");
+//   // console.log("10 X " + i + " = " + i * 10);
+//   // console.log("10 X 1 = 10")
+//   console.log(tableValue + " X " + i + " = " + i*tableValue)
+// }
+
+// for (let i = 10; i > 0; i--) {
+//   console.log("Saalaam", i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i, "===running");
+//   if (i == 2) {
+//     continue;
+//   }
+
+//   console.log(i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i, "===running");
+//   if (i == 2) {
+//     break;
+//   }
+
+//   console.log(i);
+// }
+
+const myNumbers = [1, 2, 3, 4, 5, 7, 5, 8, 6, 8, 9, 10, 11, 12];
+let isNumberFound = false;
+
+const findingNumber = 5
+
+for (let i = 0; i < myNumbers.length; i++) {
+  const item = myNumbers[i];
+  console.log(i, item);
+
+  if (item === findingNumber) {
+    isNumberFound = true;
+    break;
+  }
+}
+
+console.log(isNumberFound, "====number");
