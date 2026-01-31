@@ -362,29 +362,32 @@ const students10 = [
 // console.log(myArray2, myArray3);
 // console.log(deepCopy === myArray4);
 console.clear();
-// for (let i = 0; i > 10; i++) {
+// for (let i = 0; i < 10; i++) {
 //   console.log("Saalaam", i);
 // }
 
-// const tableValue = 2
+// const tableValue = 3;
 // for (let i = 1; i <= 10; i++) {
+//   const concatenated = tableValue + " X " + i + " = " + i*tableValue;
+//   console.log(concatenated)
 //   // console.log("10 X 1 = 10");
 //   // console.log("10 X " + i + " = " + i * 10);
 //   // console.log("10 X 1 = 10")
-//   console.log(tableValue + " X " + i + " = " + i*tableValue)
+//   // console.log(tableValue + " X " + i + " = " + i*tableValue)
 // }
 
 // for (let i = 10; i > 0; i--) {
 //   console.log("Saalaam", i);
 // }
-
+// Loopus interruptus
 // for (let i = 0; i < 10; i++) {
 //   console.log(i, "===running");
+
 //   if (i == 2) {
 //     continue;
 //   }
 
-//   console.log(i);
+//   console.log(i,"===after-running");
 // }
 
 // for (let i = 0; i < 10; i++) {
@@ -393,22 +396,93 @@ console.clear();
 //     break;
 //   }
 
-//   console.log(i);
+//   console.log(i, "===after-running");
 // }
 
-const myNumbers = [1, 2, 3, 4, 5, 7, 5, 8, 6, 8, 9, 10, 11, 12];
+const myNumbers = [1, 2, 3, 4, 5, 5, 8, 6, 8, 9, 10, 11, 12];
 let isNumberFound = false;
 
-const findingNumber = 5
-
 for (let i = 0; i < myNumbers.length; i++) {
-  const item = myNumbers[i];
-  console.log(i, item);
-
-  if (item === findingNumber) {
+  const element = myNumbers[i];
+  if (element === 13) {
     isNumberFound = true;
     break;
   }
+  console.log(element);
 }
 
-console.log(isNumberFound, "====number");
+console.log(isNumberFound);
+
+// let isNumberFound = false;
+
+// const findingNumber = 5
+
+// for (let i = 0; i < myNumbers.length; i++) {
+//   const item = myNumbers[i];
+//   console.log(i, item);
+
+//   if (item === findingNumber) {
+//     isNumberFound = true;
+//     break;
+//   }
+// }
+
+// console.log(isNumberFound, "====number");
+
+// const email = "abdullah@mailinator.com";
+// const userEnteredEmail = prompt("Enter your email to login");
+// const userEnteredLower = userEnteredEmail.toLowerCase();
+// // debugger;
+
+// if (email === userEnteredLower) alert("Login Succesfully");
+// else alert("Invalid Credentials");
+// console.log(email[3],email.length)
+// const userName = email.slice(0,8)
+// console.log(userName)
+
+// const country = "pakisTan"
+// let firstLetter = country[0];
+// let otherLetters = country.slice(1);
+
+// firstLetter = firstLetter.toUpperCase()
+// otherLetters = otherLetters.toLowerCase()
+
+// const finalCountryName = firstLetter + otherLetters
+// console.log(finalCountryName)
+
+const email = "abdullah@mailinator.com"
+const emailStartIndex = email.indexOf("@")
+const userName = email.slice(0,emailStartIndex)
+console.log(userName)
+console.clear();
+const text = "the quick brown fox jump over a lazy queen dog";
+
+// let totalWords = 0;
+// for (let i = 0; i < text.length; i++) {
+//   const item = text[i];
+//   if (item === " ") totalWords++;
+// }
+// if (totalWords) totalWords = totalWords + 1;
+// console.log(totalWords);
+
+// console.log(text[2])
+// const indexOf = text.indexOf("this");
+// const lastIndexOf = text.lastIndexOf("q");
+// console.log(indexOf, lastIndexOf);
+
+// const userWord = "queen";
+// let indexNumber = -1;
+// for (let i = 0; i < text.length; i++) {
+//   const item = text.slice(i, i + userWord.length);
+//   // console.log(item);
+//   if (item === userWord) {
+//     indexNumber = i;
+//     break;
+//   }
+// }
+
+// console.log(indexNumber);
+
+const greeting = "Hello How're Hello you!";
+const newGreetings = greeting.replaceAll("Hello", "Hi");
+console.log(newGreetings)
