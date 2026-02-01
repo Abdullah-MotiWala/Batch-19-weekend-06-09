@@ -450,11 +450,11 @@ console.log(isNumberFound);
 // const finalCountryName = firstLetter + otherLetters
 // console.log(finalCountryName)
 
-const email = "abdullah@mailinator.com"
-const emailStartIndex = email.indexOf("@")
-const userName = email.slice(0,emailStartIndex)
-console.log(userName)
-console.clear();
+// const email = "abdullah.junaid@mailinator.com"
+// const emailStartIndex = email.indexOf("@")
+// const userName = email.slice(0,emailStartIndex)
+// console.log(userName)
+// console.clear();
 const text = "the quick brown fox jump over a lazy queen dog";
 
 // let totalWords = 0;
@@ -483,6 +483,56 @@ const text = "the quick brown fox jump over a lazy queen dog";
 
 // console.log(indexNumber);
 
-const greeting = "Hello How're Hello you!";
-const newGreetings = greeting.replaceAll("Hello", "Hi");
-console.log(newGreetings)
+// const greeting = "Hello How're Hello you!";
+// const newGreetings = greeting.replaceAll("Hello", "Hi");
+// console.log(newGreetings)
+
+// const perfume = 9000.5;
+// const totalAmount = Math.round(perfume);
+// const totalAmount = Math.ceil(perfume);
+// const totalAmount = Math.floor(perfume);
+console.clear();
+// console.log(totalAmount,perfume)
+
+// const randomNumber = Math.random()
+// console.log(randomNumber)
+
+// console.log(computerNumber);
+
+// let totalScore = 0;
+// const target = 70;
+
+// while (totalScore < target) {
+//   const userNumber = +prompt("Enter your Number");
+
+//   const randomNumber = Math.random();
+//   const computerNumber = Math.ceil(randomNumber * 6);
+//   alert("Computer number is : " + computerNumber);
+
+//   const isWicket = userNumber === computerNumber;
+//   if (isWicket) {
+//     alert("Ohho, Out by Computer (Dumb Machine)");
+//     break;
+//   } else {
+//     totalScore += userNumber;
+//     if (totalScore >= target) {
+//       alert("Hurrrayy! You won");
+//     } else {
+//       alert("Your total is: " + totalScore);
+//     }
+//   }
+// }
+
+
+// const myNumber = 55;
+// const myNewNumber = myNumber.toExponential(1)
+// // const myNewNumber = myNumber.toFixed(2)
+
+// console.log(myNewNumber,myNumber)
+
+
+const date = new Date();
+// const dateString = date.toLocaleDateString()
+// const dateString = date.toISOString()
+const unixTime = date.getTime()
+console.log(unixTime)
