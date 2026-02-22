@@ -635,7 +635,136 @@ function greetUser(firstName, lastName) {
 // const userName = prompt("Enter your name");
 // // invoke / call
 // debugger;
-greetUser("Muneer","");
+// greetUser("Muneer","");
 
 // debugger;
-greetUser("Ali", "Shabbir");
+// greetUser("Ali", "Shabbir");
+
+// Define / Definition
+// function handshake(handOne, handTwo) {
+//   const handshake = handOne + handTwo;
+//   console.log(handOne, handTwo);
+//   console.log("Handshake Completed", handshake);
+//   return handshake;
+// }
+
+// const result = handshake(1, 4);
+// console.log(result);
+
+// handshake(100)
+
+// Global
+// let a22 = 1;
+
+// function myFoo() {
+//   var a22 = 1;
+
+//   if(true){
+//     var c22 = 5
+//   }
+//   console.log(c22)
+//   // if (true) {
+//   //   // let b22 = 1;
+//   //   const b22 = 1;
+//   //   // console.log(b);
+
+//   //   for(let i = 0;i<5;i++){
+//   //     let c22 = 1
+
+//   //   }
+// }
+
+// console.log(a22);
+
+// console.log(a22)
+// }
+
+// myFoo();
+
+const classTiming = 8;
+
+switch (classTiming) {
+  case 10:
+    console.log("9 bje uth jao");
+    break;
+
+  case 8:
+    console.log("7 bje uth jao");
+    break;
+
+  case 7:
+    console.log("Sehari k baad na soyo");
+    break;
+
+  default:
+    console.log("Chuttiiiii");
+}
+
+// let salary = 6000;
+// while (salary > 0) {
+//   console.log("Ayaasiiii");
+//   salary -= 200;
+// }
+// let salary = 0;
+
+// do {
+//   console.log("Ayaasiiii");
+//   salary -= 200;
+// } while (salary > 0);
+
+// console.log(salary)
+
+function fruitProcessor(apple, orange) {
+  const juice = `Juice with ${apple} apple and ${orange} orange`;
+  return juice;
+}
+
+// const time = 5;
+
+// switch (time) {
+//   case 6:
+//     const item1 = fruitProcessor(1, 1);
+//     console.log(item1);
+//     break;
+
+//   case 18:
+//     const item2 = fruitProcessor(2, 2);
+//     console.log(item2);
+//     break;
+
+//   default:
+//     console.log("Chup krke bethe raho");
+//     break;
+// }
+
+// document.write("Hello")
+// DOM : Document Object Model
+// console.log(document.childNodes)
+
+// const myKey = "name"
+
+// update | insert, upsert
+const student111 = {
+  name: "Rehan",
+  age: 30,
+  gender: "M",
+  qualification: "Intermediate",
+  rollNo: "WSS-001",
+  push: function () {},
+};
+
+// student111.fullName = "Allah wala";
+// student111.age = 31
+
+// student111.fullName
+
+// delete student111.age
+
+// student111.push()
+// console.log(student111["name"])
+// console.log(student111)
+
+
+
+
+
