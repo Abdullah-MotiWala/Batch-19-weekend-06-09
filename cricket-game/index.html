@@ -5,15 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="name-wrapper">
+    <div id="name-wrapper" class="flex">
         <input type="text" id="name" placeholder="Enter Your Name">
         <!-- <button id="name-next" onclick="getUserName()">Next</button> -->
         <button id="name-next">Next</button>
     </div>
-    
+
+    <div id="team-wrapper" class="none">
+        <div class="team">Pakistan</div>
+        <div class="team">South Africa</div>
+        <div class="team">England</div>
+        <div class="team">New Zealand</div>
+        <div class="team">West Indies</div>
+        <div class="team">SMIT Cheeteh</div>
+    </div>
+
+    <div id="toss-wrapper" class="none">
+        <div class="coin">Heads</div>
+        <div class="coin">Tails</div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
