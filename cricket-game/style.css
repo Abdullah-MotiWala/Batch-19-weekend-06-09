@@ -35,6 +35,10 @@ html {
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
 #toss-wrapper > .coin {
   height: 100px;
   width: 100px;
@@ -45,5 +49,22 @@ html {
   align-items: center;
   justify-content: center;
   margin: 6px;
+  cursor: pointer;
+}
+
+
+#batting-selection-wrapper > .batting-option {
+  height: 100px;
+  padding: 2px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 2px;
+  border: 2px solid yellow;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: #2a7b9b;
   cursor: pointer;
 }
