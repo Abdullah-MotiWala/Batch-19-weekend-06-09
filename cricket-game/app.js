@@ -5,6 +5,8 @@ let isUserBatting = null;
 let totalScore = 0;
 let totalwickets = 0;
 let target = 0;
+let lastWicketFall = null;
+let isTakingStance = null;
 
 const nameWrapper = document.getElementById("name-wrapper");
 const nameNextButton = nameWrapper.querySelector("button");
@@ -27,6 +29,8 @@ const playButton = playWrapper.querySelector("#play");
 const scoreEl = playWrapper.querySelector("#score");
 const wicketEl = playWrapper.querySelector("#wickets");
 const targetEl = playWrapper.querySelector("#target");
+const typeEl = playWrapper.querySelector("#type");
+const teamEl = playWrapper.querySelector("#team");
 
 function getUserName() {
   const value = nameInput.value;
@@ -131,14 +135,25 @@ function showAndUpdatePlay() {
   else type = "Bowling";
 
   const nameEl = playWrapper.querySelector("#name");
-  nameEl.innerText = `Name: ${userName}`;
+  nameEl.innerText = `${userName}`;
 
-  const typeEl = playWrapper.querySelector("#type");
   typeEl.innerText = `You're ${type}`;
+  teamEl.innerText = `${selectedTeam} vs AI`;
   playWrapper.classList.replace("none", "block");
 }
 
-const attemp = ["score", "wicket"];
+const attemp = [
+  "score",
+  "score",
+  "score",
+  "score",
+  "wicket",
+  "score",
+  "score",
+  "wicket",
+  "score",
+  "score",
+];
 const subAttempts = {
   score: [0, 1, 2, 3, 4, 5, 6],
   wicket: [
@@ -149,21 +164,32 @@ const subAttempts = {
     "Run out",
     "Hit Wickets",
     "Stump Out",
-    "Timeout",
   ],
 };
 playButton.addEventListener("click", function () {
   document.addEventListener("keypress", playAttempt);
   playButton.remove();
+  lastWicketFall = new Date();
+  isTakingStance = true;
 });
 
 function playAttempt(event) {
   console.log(event);
   const isSpacePressed = event.keyCode === 32;
   if (!isSpacePressed) return;
+  const currentTime = new Date();
+  const ctInMs = currentTime.getTime();
+  const lwfInMs = lastWicketFall.getTime();
+  const diff = ctInMs - lwfInMs;
+  const isTimeout = diff >= 5000;
+  console.log(isTimeout, diff);
+  if (isTimeout && isTakingStance) {
+    updateWicket("Timeout");
+    return;
+  }
 
   const randomNumerForAttempt = Math.random();
-  const parentAttempInd = Math.floor(randomNumerForAttempt * 2);
+  const parentAttempInd = Math.floor(randomNumerForAttempt * attemp.length);
 
   const parentAttempt = attemp[parentAttempInd];
   const isScore = parentAttempt === "score";
@@ -175,12 +201,17 @@ function playAttempt(event) {
   }
 }
 
-function updateWicket() {
-  const wicketTypes = subAttempts.wicket;
-  const randomNumber = Math.random();
-  const wicketIndex = Math.floor(randomNumber * 8);
-  const wicket = wicketTypes[wicketIndex];
-  alert(`Wicket Out: ${wicket}`);
+function updateWicket(externalWicket) {
+  if (!externalWicket) {
+    const wicketTypes = subAttempts.wicket;
+    const randomNumber = Math.random();
+    const wicketIndex = Math.floor(randomNumber * wicketTypes.length);
+    const wicket = wicketTypes[wicketIndex];
+    alert(`Wicket Out: ${wicket}`);
+  } else {
+    alert(`Wicket Out: ${externalWicket}`);
+  }
+
   totalwickets++;
   wicketEl.innerText = totalwickets;
 
@@ -191,6 +222,8 @@ function updateWicket() {
         isUserBatting = false;
         target = totalScore + 1;
         targetEl.innerText = target;
+        const type = "Bowling";
+        typeEl.innerText = `You're ${type}`;
       } else {
         alert("You've lost the match");
         document.removeEventListener("keypress", playAttempt);
@@ -200,7 +233,9 @@ function updateWicket() {
         target = totalScore + 1;
         targetEl.innerText = target;
         isUserBatting = true;
-        alert("You've taken all the wicked");
+        alert("You've taken all the wickets");
+        const type = "Batting";
+        typeEl.innerText = `You're ${type}`;
       } else {
         alert("You've won the match");
         document.removeEventListener("keypress", playAttempt);
@@ -208,15 +243,25 @@ function updateWicket() {
     }
     totalwickets = 0;
     totalScore = 0;
+    scoreEl.innerText = 0;
+    wicketEl.innerText = 0;
   }
+  lastWicketFall = new Date();
+  isTakingStance = true;
 }
 
 function updateScore() {
+  isTakingStance = false;
+
   const scoreTypes = subAttempts.score;
   const randomNumber = Math.random();
   const scoreIndex = Math.floor(randomNumber * 7);
   const score = scoreTypes[scoreIndex];
-  alert(`You've scored: ${score}`);
+  if (isUserBatting) {
+    alert(`You've scored: ${score}`);
+  } else {
+    alert(`AI has scored ${score}`);
+  }
   totalScore += score;
   scoreEl.innerText = totalScore;
 
