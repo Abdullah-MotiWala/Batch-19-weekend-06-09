@@ -74,8 +74,7 @@ const isBakeryOpen = true;
 //   console.log("Buy Chapati");
 // }
 
-
-// ===, == 
+// ===, ==
 // <, >, <=, >=
 
 // const age = 24
@@ -94,3 +93,116 @@ const isBakeryOpen = true;
 // if(age === "24"){
 
 // }
+const isCourseCompleted = true;
+const isPassed = true;
+
+if (isCourseCompleted) {
+  if (isPassed) {
+    console.log("Certified");
+  }
+}
+
+if (isCourseCompleted && isPassed) {
+  console.log("Certified");
+}
+
+const isEntryTestCleared = false;
+const isParchi = false;
+const isFeesPaid = true;
+
+if (isEntryTestCleared && isParchi && isFeesPaid) {
+  console.log("Let him Entre");
+}
+
+const myArr = ["a", "b", "c"];
+
+const first = myArr[0];
+console.log(first);
+
+myArr.push("d", "e", "f");
+const newestLenght = myArr.unshift("0a", "0b");
+const removedElem = myArr.splice(2, 2, "0c", "0d");
+
+const popReturned = myArr.pop();
+const shiftRemoved = myArr.shift();
+const copiedArr = myArr.slice(0, 5);
+
+console.log(myArr, popReturned, shiftRemoved, copiedArr);
+
+// for (let i = 1; i > 0; i++) {
+//   if(i === 5){
+//     continue;
+//   }
+//   console.log("2 X " + (i + 1) + " = " + (i + 1) * 2);
+
+//   if (i === 11) {
+//     break;
+//   }
+// }
+
+// const cities = [
+//   "NEW YORK",
+//   "LONDON",
+//   "TOKYO",
+//   "PARIS",
+//   "SYDNEY",
+//   "DUBAI",
+//   "TORONTO",
+//   "BERLIN",
+//   "MOSCOW",
+//   "SINGAPORE",
+// ];
+
+// const newCities = [];
+
+// for (let i = 0; i < cities.length; i++) {
+//   const city = cities[i].toLowerCase();
+//   // const lowerCity = city.toLowerCase();
+//   newCities.push(city);
+// }
+
+// console.log(cities, newCities);
+
+const sentence = "the quick brown the fox jumps over the lazy dog.";
+// const newSentence = sentence.replace("quick", "fast");
+const newSentence = sentence.replaceAll("the", "A");
+console.log(sentence, "\n", newSentence);
+// const theIndex = sentence.indexOf("the")
+// const theIndex = sentence.lastIndexOf("the")
+// console.log(theIndex)
+
+const myNum = 1.5;
+// const roundNum = Math.round(myNum);
+// const roundNum = Math.floor(myNum);
+const roundNum = Math.ceil(myNum);
+
+console.log(myNum, roundNum);
+
+const randomNum = Math.random();
+console.log(randomNum);
+
+const stringedNum = "20.5";
+// const stringedNum = "abc";
+// const stringedNum = +"20"
+// const convertedNum = parseInt(stringedNum);
+// const convertedNum = Number(stringedNum);
+const convertedNum = parseFloat(stringedNum).toFixed(2);
+
+console.log(isNaN(convertedNum), convertedNum);
+// console.log(stringedNum, convertedNum);
+
+const date = new Date();
+console.log(date.getMilliseconds());
+console.log(date.getSeconds());
+console.log(date.getMinutes());
+console.log(date.getHours());
+console.log(date.getDay());
+console.log(date.getMonth());
+console.log(date.getFullYear());
+console.log(date.getDate());
+console.log(date.getTime());
+
+date.setHours(16)
+
+console.log(date.getUTCHours());
+console.log(date, "===date");
